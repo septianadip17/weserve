@@ -1,5 +1,12 @@
+:root {
+  --main-color: #640ef1;
+  --color-1: #f1f4f5;
+  --color-2: #080c2e;
+}
+
 *,
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -18,3 +25,51 @@ button {
   background-color: transparent;
   border: none;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-1);
+  font-weight: 500;
+}
+
+.font-clash-display {
+  font-family: "ClashDisplay-Variable";
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+/* HEADER */
+header.main-header .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+header.main-header .wrapper .logo{
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+header.main-header .wrapper .logo span{
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-2);
+}
+
+header.main-header .wrapper .logo svg path.leaf{
+  fill: var(--main-color);
+}
+
+/* end HEADER */
