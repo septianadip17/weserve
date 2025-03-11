@@ -1,7 +1,9 @@
 :root {
+  --white: #fff;
   --main-color: #640ef1;
   --color-1: #f1f4f5;
   --color-2: #080c2e;
+  --color-3: #ff3232;
 }
 
 *,
@@ -47,6 +49,10 @@ body {
   row-gap: 100px;
 }
 
+.current-stroke {
+  stroke: currentColor;
+}
+
 /* HEADER */
 header.main-header .wrapper {
   display: flex;
@@ -87,6 +93,31 @@ header.main-header .wrapper ul li a {
   column-gap: 4px;
   color: var(--color-2);
   text-decoration: none;
+}
+
+header.main-header .wrapper ul.cta {
+  column-gap: 10px;
+}
+
+header.main-header .wrapper ul.cta li a {
+  background-color: var(--white);
+  border-radius: 9999px;
+}
+
+header.main-header .wrapper ul.cta li a.bag {
+  padding: 10px;
+  position: relative;
+}
+
+header.main-header .wrapper ul.cta li a.bag span.notification {
+  top: 11px;
+  right: 11px;
+  border-radius: 9999px;
+  background-color: var(--color-3);
+  display: block;
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1/1;
 }
 
 /* end HEADER */
