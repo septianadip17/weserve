@@ -95,7 +95,7 @@ header.main-header .wrapper ul li a {
   text-decoration: none;
 }
 
-header.main-header .wrapper ul.main-menu li.has-dropdown a span.arrow{
+header.main-header .wrapper ul.main-menu li.has-dropdown a span.arrow {
   width: 8px;
   aspect-ratio: 1/1;
   border-right: 1px solid var(--color-2);
@@ -134,6 +134,30 @@ header.main-header .wrapper ul.cta li a.secondary {
   background-color: var(--color-2);
   color: var(--color-1);
 }
-
-
 /* end HEADER */
+
+/* HERO */
+section.hero{
+  display: flex;
+}
+
+section.hero .content-left{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+section.hero .content-left .pill{
+  padding: 8px 16px;
+  display: flex;
+  column-gap: 6px;
+  color: var(--color-2);
+  border-radius: 9999px;
+  background-color: var(--white);
+}
+
+section.hero .content-left .pill .text{
+  font-weight: 600;
+}
+
+/* end HERO */
