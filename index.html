@@ -1,161 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weserve</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/clash-display.css" />
-  </head>
 
-  <body>
-    <div class="outer-container">
-      <header class="container main-header">
-        <div class="wrapper">
-          <!-- Logo -->
-          <span class="logo">
-            <svg
-              width="41"
-              height="40"
-              viewBox="0 0 41 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                class="leaf"
-                d="M22.5246 32.1116C22.5606 28.4402 21.6298 25.4546 20.4458 25.443C19.2617 25.4314 18.2727 28.3983 18.2369 32.0697C18.201 35.7411 19.1318 38.7268 20.3158 38.7383C21.4998 38.7499 22.4888 35.783 22.5246 32.1116Z"
-              />
-              <path
-                class="leaf"
-                d="M15.6576 31.2777C17.6728 28.2086 18.5041 25.1937 17.5144 24.5438C16.5245 23.8939 14.0884 25.855 12.0732 28.9241C10.058 31.9933 9.22669 35.0081 10.2164 35.6581C11.2063 36.308 13.6423 34.3469 15.6576 31.2777Z"
-              />
-              <path
-                class="leaf"
-                d="M10.3233 26.8744C13.6781 25.3822 16.0074 23.2955 15.5261 22.2136C15.0449 21.1317 11.9353 21.4643 8.58062 22.9565C5.22593 24.4487 2.89655 26.5354 3.37779 27.6174C3.85902 28.6993 6.96865 28.3666 10.3233 26.8744Z"
-              />
-              <path
-                class="leaf"
-                d="M15.1235 19.1796C15.3037 18.0093 12.5079 16.6078 8.87911 16.0492C5.25022 15.4907 2.16243 15.9867 1.9823 17.157C1.80217 18.3273 4.59791 19.7287 8.22678 20.2873C11.8556 20.8459 14.9434 20.3499 15.1235 19.1796Z"
-              />
-              <path
-                class="leaf"
-                d="M16.4264 16.3916C17.2106 15.5044 15.616 12.8141 12.8649 10.3826C10.1137 7.95121 7.24784 6.6994 6.4637 7.58665C5.67956 8.47392 7.27412 11.1642 10.0253 13.5957C12.7764 16.0271 15.6423 17.2789 16.4264 16.3916Z"
-              />
-              <path
-                class="leaf"
-                d="M19.0211 14.7623C20.1605 14.4399 20.2737 11.3145 19.274 7.78164C18.2743 4.24877 16.5402 1.64618 15.4009 1.96859C14.2615 2.29099 14.1483 5.41631 15.148 8.94921C16.1477 12.482 17.8818 15.0847 19.0211 14.7623Z"
-              />
-              <path
-                class="leaf"
-                d="M26.0667 9.05912C27.1359 5.54664 27.0844 2.4197 25.9516 2.07489C24.8188 1.73007 23.0338 4.29796 21.9646 7.81043C20.8954 11.3229 20.947 14.4498 22.0798 14.7946C23.2126 15.1394 24.9976 12.5716 26.0667 9.05912Z"
-              />
-              <path
-                class="leaf"
-                d="M31.1011 13.8052C33.8993 11.428 35.5462 8.76935 34.7795 7.86698C34.0128 6.96458 31.123 8.16015 28.3249 10.5373C25.5267 12.9145 23.8799 15.5731 24.6466 16.4755C25.4132 17.3779 28.3031 16.1824 31.1011 13.8052Z"
-              />
-              <path
-                class="leaf"
-                d="M32.7658 20.5215C36.405 20.0346 39.2278 18.6885 39.0707 17.5149C38.9138 16.3413 35.8363 15.7845 32.1971 16.2713C28.558 16.7582 25.7351 18.1043 25.8922 19.278C26.0492 20.4516 29.1266 21.0084 32.7658 20.5215Z"
-              />
-              <path
-                class="leaf"
-                d="M37.4603 27.9528C37.9628 26.8806 35.675 24.7484 32.3504 23.1903C29.0258 21.6322 25.9234 21.2384 25.4209 22.3106C24.9184 23.3828 27.2062 25.515 30.5308 27.0731C33.8554 28.6311 36.9579 29.025 37.4603 27.9528Z"
-              />
-              <path
-                class="leaf"
-                d="M30.4671 35.8639C31.4695 35.2337 30.6978 32.203 28.7435 29.0947C26.7892 25.9865 24.3922 23.9778 23.3898 24.608C22.3874 25.2382 23.1591 28.269 25.1134 31.3772C27.0678 34.4854 29.4647 36.4942 30.4671 35.8639Z"
-              />
-            </svg>
-            <span>weserve.</span>
-          </span>
-          <!-- End Logo -->
-          <ul class="main-menu">
-            <li class=""><a href="#" class="">Products</a></li>
-            <li class="has-dropdown">
-              <a href="#" class=""
-                >Services<span class="arrow"></span
-              ></a>
-            </li>
-            <li class=""><a href="#" class="">Pricing</a></li>
-            <li class=""><a href="#" class="">Testimonial</a></li>
-            <li class=""><a href="#" class="">Blog</a></li>
-          </ul>
-          <ul class="cta">
-            <li class="">
-              <a href="#" class="bag">
-                <span class="notification"></span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="current-stroke"
-                    d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    class="current-stroke"
-                    d="M9.00001 22H15C19.02 22 19.74 20.39 19.95 18.43L20.7 12.43C20.97 9.99 20.27 8 16 8H8.00001C3.73001 8 3.03001 9.99 3.30001 12.43L4.05001 18.43C4.26001 20.39 4.98001 22 9.00001 22Z"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    class="current-stroke"
-                    d="M15.4955 12H15.5045"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    class="current-stroke"
-                    d="M8.49451 12H8.50349"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class=""><a href="#" class="secondary">Sign In</a></li>
-          </ul>
-        </div>
-      </header>
-      <main>
-        <section class="container hero">
-          <div class="content-left" style="width: 600px;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weserve</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/clash-display.css" />
+</head>
+
+<body>
+  <div class="outer-container">
+    <header class="container main-header">
+      <div class="wrapper">
+        <!-- Logo -->
+        <span class="logo">
+          <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="leaf"
+              d="M22.5246 32.1116C22.5606 28.4402 21.6298 25.4546 20.4458 25.443C19.2617 25.4314 18.2727 28.3983 18.2369 32.0697C18.201 35.7411 19.1318 38.7268 20.3158 38.7383C21.4998 38.7499 22.4888 35.783 22.5246 32.1116Z" />
+            <path class="leaf"
+              d="M15.6576 31.2777C17.6728 28.2086 18.5041 25.1937 17.5144 24.5438C16.5245 23.8939 14.0884 25.855 12.0732 28.9241C10.058 31.9933 9.22669 35.0081 10.2164 35.6581C11.2063 36.308 13.6423 34.3469 15.6576 31.2777Z" />
+            <path class="leaf"
+              d="M10.3233 26.8744C13.6781 25.3822 16.0074 23.2955 15.5261 22.2136C15.0449 21.1317 11.9353 21.4643 8.58062 22.9565C5.22593 24.4487 2.89655 26.5354 3.37779 27.6174C3.85902 28.6993 6.96865 28.3666 10.3233 26.8744Z" />
+            <path class="leaf"
+              d="M15.1235 19.1796C15.3037 18.0093 12.5079 16.6078 8.87911 16.0492C5.25022 15.4907 2.16243 15.9867 1.9823 17.157C1.80217 18.3273 4.59791 19.7287 8.22678 20.2873C11.8556 20.8459 14.9434 20.3499 15.1235 19.1796Z" />
+            <path class="leaf"
+              d="M16.4264 16.3916C17.2106 15.5044 15.616 12.8141 12.8649 10.3826C10.1137 7.95121 7.24784 6.6994 6.4637 7.58665C5.67956 8.47392 7.27412 11.1642 10.0253 13.5957C12.7764 16.0271 15.6423 17.2789 16.4264 16.3916Z" />
+            <path class="leaf"
+              d="M19.0211 14.7623C20.1605 14.4399 20.2737 11.3145 19.274 7.78164C18.2743 4.24877 16.5402 1.64618 15.4009 1.96859C14.2615 2.29099 14.1483 5.41631 15.148 8.94921C16.1477 12.482 17.8818 15.0847 19.0211 14.7623Z" />
+            <path class="leaf"
+              d="M26.0667 9.05912C27.1359 5.54664 27.0844 2.4197 25.9516 2.07489C24.8188 1.73007 23.0338 4.29796 21.9646 7.81043C20.8954 11.3229 20.947 14.4498 22.0798 14.7946C23.2126 15.1394 24.9976 12.5716 26.0667 9.05912Z" />
+            <path class="leaf"
+              d="M31.1011 13.8052C33.8993 11.428 35.5462 8.76935 34.7795 7.86698C34.0128 6.96458 31.123 8.16015 28.3249 10.5373C25.5267 12.9145 23.8799 15.5731 24.6466 16.4755C25.4132 17.3779 28.3031 16.1824 31.1011 13.8052Z" />
+            <path class="leaf"
+              d="M32.7658 20.5215C36.405 20.0346 39.2278 18.6885 39.0707 17.5149C38.9138 16.3413 35.8363 15.7845 32.1971 16.2713C28.558 16.7582 25.7351 18.1043 25.8922 19.278C26.0492 20.4516 29.1266 21.0084 32.7658 20.5215Z" />
+            <path class="leaf"
+              d="M37.4603 27.9528C37.9628 26.8806 35.675 24.7484 32.3504 23.1903C29.0258 21.6322 25.9234 21.2384 25.4209 22.3106C24.9184 23.3828 27.2062 25.515 30.5308 27.0731C33.8554 28.6311 36.9579 29.025 37.4603 27.9528Z" />
+            <path class="leaf"
+              d="M30.4671 35.8639C31.4695 35.2337 30.6978 32.203 28.7435 29.0947C26.7892 25.9865 24.3922 23.9778 23.3898 24.608C22.3874 25.2382 23.1591 28.269 25.1134 31.3772C27.0678 34.4854 29.4647 36.4942 30.4671 35.8639Z" />
+          </svg>
+          <span>weserve.</span>
+        </span>
+        <!-- End Logo -->
+        <ul class="main-menu">
+          <li class=""><a href="#" class="">Products</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="">Services<span class="arrow"></span></a>
+          </li>
+          <li class=""><a href="#" class="">Pricing</a></li>
+          <li class=""><a href="#" class="">Testimonial</a></li>
+          <li class=""><a href="#" class="">Blog</a></li>
+        </ul>
+        <ul class="cta">
+          <li class="">
+            <a href="#" class="bag">
+              <span class="notification"></span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="current-stroke"
+                  d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001"
+                  stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path class="current-stroke"
+                  d="M9.00001 22H15C19.02 22 19.74 20.39 19.95 18.43L20.7 12.43C20.97 9.99 20.27 8 16 8H8.00001C3.73001 8 3.03001 9.99 3.30001 12.43L4.05001 18.43C4.26001 20.39 4.98001 22 9.00001 22Z"
+                  stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path class="current-stroke" d="M15.4955 12H15.5045" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path class="current-stroke" d="M8.49451 12H8.50349" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li class=""><a href="#" class="secondary">Sign In</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="container hero">
+        <div class="content-left" style="width: 600px;">
+          <span class="">
             <span class="pill">
               <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8.00001 3.5H9.00001C7.05001 9.34 7.05001 15.66 9.00001 21.5H8.00001" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15 3.5C16.95 9.34 16.95 15.66 15 21.5" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 16.5V15.5C8.84 17.45 15.16 17.45 21 15.5V16.5" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 9.50001C8.84 7.55001 15.16 7.55001 21 9.50001" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="text">
-                  We host more than 120,000 websites 
-                </span>
+                <path
+                  d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                  class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8.00001 3.5H9.00001C7.05001 9.34 7.05001 15.66 9.00001 21.5H8.00001" class="current-stroke"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 3.5C16.95 9.34 16.95 15.66 15 21.5" class="current-stroke" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 16.5V15.5C8.84 17.45 15.16 17.45 21 15.5V16.5" class="current-stroke" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 9.50001C8.84 7.55001 15.16 7.55001 21 9.50001" class="current-stroke" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="text">
+                We host more than 120,000 websites
+              </span>
             </span>
-          </div>
-          <div class="content-right">
+          </span>
 
+          <div class="">
+            <h1 class="font-clash-display">Grow Online Business Faster.</h1>
+            <h2>We provide a variety of servers to grow your users acquisition much user-friendly and boosting up sales.
+            </h2>
           </div>
-        </section>
 
-      </main>
-    </div>
-  </body>
+          <span class="cta">
+            <a href="" class="primary">Try Free Trial</a>
+            <a href="" class="tertiary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12.2V13.9C20 17.05 18.2 18.4 15.5 18.4H6.5C3.8 18.4 2 17.05 2 13.9V8.5C2 5.35 3.8 4 6.5 4H9.2C9.07 4.38 9 4.8 9 5.25V9.15002C9 10.12 9.32 10.94 9.89 11.51C10.46 12.08 11.28 12.4 12.25 12.4V13.79C12.25 14.3 12.83 14.61 13.26 14.33L16.15 12.4H18.75C19.2 12.4 19.62 12.33 20 12.2Z" class="current-stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 5.25V9.15002C22 10.64 21.24 11.76 20 12.2C19.62 12.33 19.2 12.4 18.75 12.4H16.15L13.26 14.33C12.83 14.61 12.25 14.3 12.25 13.79V12.4C11.28 12.4 10.46 12.08 9.89 11.51C9.32 10.94 9 10.12 9 9.15002V5.25C9 4.8 9.07 4.38 9.2 4C9.64 2.76 10.76 2 12.25 2H18.75C20.7 2 22 3.3 22 5.25Z" class="current-stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.39999 22H14.6" class="current-stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11 18.4V22" class="current-stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.4955 7.25H18.5045" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.6957 7.25H15.7047" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.8954 7.25H12.9044" class="current-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              Schedule a Demo</a>
+          </span>
+        </div>
+        <div class="content-right">
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+
 </html>
