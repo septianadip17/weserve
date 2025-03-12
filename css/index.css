@@ -95,6 +95,15 @@ header.main-header .wrapper ul li a {
   text-decoration: none;
 }
 
+header.main-header .wrapper ul.main-menu li.has-dropdown a span.arrow{
+  width: 8px;
+  aspect-ratio: 1/1;
+  border-right: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+  position: relative;
+  transform: translateY(-2px) rotate(45deg);
+}
+
 header.main-header .wrapper ul.cta {
   column-gap: 10px;
 }
@@ -119,5 +128,12 @@ header.main-header .wrapper ul.cta li a.bag span.notification {
   width: 8px;
   aspect-ratio: 1/1;
 }
+
+header.main-header .wrapper ul.cta li a.secondary {
+  padding: 10px 30px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
 
 /* end HEADER */
