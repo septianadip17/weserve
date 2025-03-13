@@ -78,6 +78,36 @@ a.tertiary, button.tertiary{
   color: var(--main-color);
 }
 
+.tag-type-1{
+  border-radius: 9999px;
+  display: flex;
+  column-gap: 20px;
+  background-color: var(--white);
+}
+
+.tag-type-1 svg{
+  color: var(--main-color);
+}
+
+.tag-type-1 > span{
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-type-1 > span > span:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-2);
+}
+.tag-type-1 > span > span:nth-child(2) {
+  color: var(--color-4);
+}
+
+.tag-type-1.top-left{
+  position: absolute;
+
+}
+
 /* HEADER */
 header.main-header .wrapper {
   display: flex;
