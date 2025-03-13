@@ -79,8 +79,10 @@ a.tertiary, button.tertiary{
 }
 
 .tag-type-1{
-  border-radius: 9999px;
+  border-radius: 26px;
   display: flex;
+  padding: 20px 25px;
+  align-items: center;
   column-gap: 20px;
   background-color: var(--white);
 }
@@ -105,7 +107,56 @@ a.tertiary, button.tertiary{
 
 .tag-type-1.top-left{
   position: absolute;
+  top: -53px;
+  left: -50px;
+}
 
+.tag-type-2{
+  border-radius: 26px;
+  display: flex;
+  padding: 20px 25px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  background-color: var(--white);
+}
+
+.tag-type-2 svg{
+  color: var(--main-color);
+}
+
+.tag-type-2 > span{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tag-type-2 > span > span:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-2);
+}
+.tag-type-2 > span > span:nth-child(2) {
+  color: var(--color-4);
+}
+
+.tag-type-2.bottom-right{
+  position: absolute;
+  bottom: 30px;
+  right: -50px;
+}
+
+.tag-type-3{
+  border-radius: 9999px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background-color: var(--main-color);
+}
+.tag-type-3 svg{
+  color: var(--main-color);
 }
 
 /* HEADER */
@@ -233,6 +284,17 @@ section.hero .content-left h2{
 section.hero .content-left .cta{
   display: flex;
   column-gap: 20px;
+}
+
+section.hero .content-right figure{
+  position: relative;
+}
+
+section.hero .content-right figure img{
+  border-radius: 0 70px 70px 70px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* end HERO */
