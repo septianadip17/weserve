@@ -54,6 +54,10 @@ body {
   stroke: currentColor;
 }
 
+.current-fill {
+  fill: currentColor;
+}
+
 a.primary{
   text-decoration: none;
 }
@@ -303,3 +307,22 @@ section.hero .content-right figure img{
 }
 
 /* end HERO */
+
+/* CLIENTS */
+ul.clients{
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ul.clients li{
+  color: var(--color-2);
+  transition: color 0.15s ease-in-out;
+}
+
+ul.clients li:hover{
+  color: var(--main-color); 
+}
+/* end CLIENTS */
