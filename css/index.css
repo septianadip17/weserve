@@ -5,6 +5,8 @@
   --color-2: #080c2e;
   --color-3: #ff3232;
   --color-4: #5d5d7c;
+  --color-5: #8d90a8;
+  --color-6: #424560;
 }
 
 *,
@@ -58,11 +60,12 @@ body {
   fill: currentColor;
 }
 
-a.primary{
+a.primary {
   text-decoration: none;
 }
 
-a.primary, button.primary{
+a.primary,
+button.primary {
   border-radius: 9999px;
   font-size: 18px;
   background-color: var(--main-color);
@@ -70,18 +73,19 @@ a.primary, button.primary{
   color: var(--white);
 }
 
-a.tertiary{
+a.tertiary {
   text-decoration: none;
 }
 
-a.tertiary, button.tertiary{
+a.tertiary,
+button.tertiary {
   display: inline-flex;
   align-items: center;
-  column-gap: 6px ;
+  column-gap: 6px;
   color: var(--main-color);
 }
 
-.tag-type-1{
+.tag-type-1 {
   border-radius: 26px;
   display: flex;
   padding: 20px 25px;
@@ -90,31 +94,32 @@ a.tertiary, button.tertiary{
   background-color: var(--white);
 }
 
-.tag-type-1 svg{
+.tag-type-1 svg {
   color: var(--main-color);
 }
 
-.tag-type-1 > span{
+.tag-type-1>span {
   display: flex;
   flex-direction: column;
 }
 
-.tag-type-1 > span > span:nth-child(1) {
+.tag-type-1>span>span:nth-child(1) {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-2);
 }
-.tag-type-1 > span > span:nth-child(2) {
+
+.tag-type-1>span>span:nth-child(2) {
   color: var(--color-4);
 }
 
-.tag-type-1.top-left{
+.tag-type-1.top-left {
   position: absolute;
   top: -53px;
   left: -50px;
 }
 
-.tag-type-2{
+.tag-type-2 {
   border-radius: 26px;
   display: flex;
   padding: 20px 25px;
@@ -124,32 +129,33 @@ a.tertiary, button.tertiary{
   background-color: var(--white);
 }
 
-.tag-type-2 svg{
+.tag-type-2 svg {
   color: var(--main-color);
 }
 
-.tag-type-2 > span{
+.tag-type-2>span {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.tag-type-2 > span > span:nth-child(1) {
+.tag-type-2>span>span:nth-child(1) {
   font-size: 30px;
   font-weight: 700;
   color: var(--color-2);
 }
-.tag-type-2 > span > span:nth-child(2) {
+
+.tag-type-2>span>span:nth-child(2) {
   color: var(--color-4);
 }
 
-.tag-type-2.bottom-right{
+.tag-type-2.bottom-right {
   position: absolute;
   bottom: 30px;
   right: -50px;
 }
 
-.tag-type-3{
+.tag-type-3 {
   border-radius: 9999px;
   display: flex;
   padding: 20px;
@@ -159,23 +165,23 @@ a.tertiary, button.tertiary{
   background-color: var(--main-color);
 }
 
-.tag-type-3.top-right{
+.tag-type-3.top-right {
   position: absolute;
   top: 43px;
   right: -43px;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-section h2.title{
+section h2.title {
   font-size: 46px;
   font-weight: 600;
   font-family: "ClashDisplay-Variable";
 }
 
-section:not(.bg-main) h2.title{
+section:not(.bg-main) h2.title {
   color: var(--color-2);
 }
 
@@ -260,22 +266,23 @@ header.main-header .wrapper ul.cta li a.secondary {
   background-color: var(--color-2);
   color: var(--color-1);
 }
+
 /* end HEADER */
 
 /* HERO */
-section.hero{
+section.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-section.hero .content-left{
+section.hero .content-left {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
 }
 
-section.hero .content-left .pill{
+section.hero .content-left .pill {
   padding: 8px 16px;
   display: inline-flex;
   column-gap: 6px;
@@ -284,18 +291,18 @@ section.hero .content-left .pill{
   background-color: var(--white);
 }
 
-section.hero .content-left .pill .text{
+section.hero .content-left .pill .text {
   font-weight: 600;
 }
 
-section.hero .content-left h1{
+section.hero .content-left h1 {
   font-weight: 600;
   font-size: 70px;
   line-height: 1em;
   color: var(--color-2);
 }
 
-section.hero .content-left h2{
+section.hero .content-left h2 {
   font-weight: 500;
   font-size: 1rem;
   line-height: 2rem;
@@ -303,16 +310,16 @@ section.hero .content-left h2{
   max-width: 75%;
 }
 
-section.hero .content-left .cta{
+section.hero .content-left .cta {
   display: flex;
   column-gap: 20px;
 }
 
-section.hero .content-right figure{
+section.hero .content-right figure {
   position: relative;
 }
 
-section.hero .content-right figure img{
+section.hero .content-right figure img {
   border-radius: 0 70px 70px 70px;
   width: 100%;
   height: 100%;
@@ -322,7 +329,7 @@ section.hero .content-right figure img{
 /* end HERO */
 
 /* CLIENTS */
-ul.clients{
+ul.clients {
   display: flex;
   justify-content: center;
   column-gap: 50px;
@@ -330,22 +337,24 @@ ul.clients{
   cursor: pointer;
 }
 
-ul.clients li{
+ul.clients li {
   color: var(--color-2);
   transition: color 0.15s ease-in-out;
 }
 
-ul.clients li:hover{
-  color: var(--main-color); 
+ul.clients li:hover {
+  color: var(--main-color);
 }
+
 /* end CLIENTS */
 
 /* CARD */
-.card{
+.card {
   display: flex;
   column-gap: 30px;
 }
-.card .card-child{
+
+.card .card-child {
   padding: 30px 24px;
   background-color: var(--white);
   border-radius: 1rem;
@@ -353,21 +362,74 @@ ul.clients li:hover{
   flex-direction: column;
   row-gap: 30px;
   position: relative;
+  transition: all 0.15s ease-in-out;
 }
-.card .card-child.has-link a::after{
+
+.card .card-child::before{
   position: absolute;
   content: "";
-  inset: 0;
+  width: 64px;
+  height: 150px;
+  background-color: var(--color-6);
+  filter: blur(30px);
+  top: 30px;
+  right: 70px;
+  opacity: 0;
+  transform: rotate(30deg);
+  transition: opacity 0.15s ease-in-out;
+  z-index: 1;
 }
-.card .card-child svg{
+
+.card .card-child:hover::before {
+  opacity: 1;
+}
+
+
+.card .card-child:hover {
+  background-color: var(--color-2);
+  color: var(--white);
+}
+
+.card .card-child:hover > span h3{
+  color: inherit;
+}
+
+.card .card-child:hover > span span{
+  color: var(--color-5 );
+}
+
+.card .card-child:not(:hover){
   color: var(--main-color);
 }
-.card .card-child > span h3{
+
+.card .card-child:hover a {
+  color: inherit;
+}
+
+.card .card-child.has-link a::after {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  inset: 0;
+}
+
+.card .card-child svg {
+  color: inherit;
+}
+
+.card .card-child>span {
+  position: relative;
+  z-index: 2;
+}
+
+.card .card-child>span h3 {
   color: var(--color-2);
   font-size: 22px;
   font-weight: 700;
 }
-.card .card-child > span span{
+
+.card .card-child>span span {
   color: var(--color-4);
 }
+
 /* end CARD */
