@@ -352,6 +352,12 @@ ul.clients li:hover{
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  position: relative;
+}
+.card .card-child.has-link a::after{
+  position: absolute;
+  content: "";
+  inset: 0;
 }
 .card .card-child svg{
   color: var(--main-color);
