@@ -339,3 +339,29 @@ ul.clients li:hover{
   color: var(--main-color); 
 }
 /* end CLIENTS */
+
+/* CARD */
+.card{
+  display: flex;
+  column-gap: 30px;
+}
+.card .card-child{
+  padding: 30px 24px;
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.card .card-child svg{
+  color: var(--main-color);
+}
+.card .card-child > span h3{
+  color: var(--color-2);
+  font-size: 22px;
+  font-weight: 700;
+}
+.card .card-child > span span{
+  color: var(--color-4);
+}
+/* end CARD */
