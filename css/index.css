@@ -78,7 +78,6 @@ a.tertiary, button.tertiary{
   display: inline-flex;
   align-items: center;
   column-gap: 6px ;
-  padding: 16px 40px;
   color: var(--main-color);
 }
 
