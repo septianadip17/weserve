@@ -166,6 +166,20 @@ a.tertiary, button.tertiary{
   right: -43px;
 }
 
+.text-center{
+  text-align: center;
+}
+
+section h2.title{
+  font-size: 46px;
+  font-weight: 600;
+  font-family: "ClashDisplay-Variable";
+}
+
+section:not(.bg-main) h2.title{
+  color: var(--color-2);
+}
+
 /* HEADER */
 header.main-header .wrapper {
   display: flex;
