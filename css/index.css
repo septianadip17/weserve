@@ -150,6 +150,7 @@ button.tertiary {
 }
 
 .tag-type-2.bottom-right {
+  position: absolute;
   bottom: 30px;
   right: -50px;
 }
@@ -165,6 +166,7 @@ button.tertiary {
 }
 
 .tag-type-3.top-right {
+  position: absolute;
   top: 43px;
   right: -43px;
 }
@@ -371,7 +373,7 @@ ul.clients li:hover {
   background-color: var(--color-6);
   filter: blur(30px);
   top: 30px;
-  right: 70px;
+  right: 70px; 
   opacity: 0;
   transform: rotate(30deg);
   transition: opacity 0.15s ease-in-out;
