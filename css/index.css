@@ -86,7 +86,7 @@ button.tertiary {
 }
 
 .tag-type-1 {
-  position: absolute;
+  /* position: absolute; */
   border-radius: 26px;
   display: flex;
   padding: 20px 25px;
@@ -150,7 +150,7 @@ button.tertiary {
 }
 
 .tag-type-2.bottom-right {
-  position: absolute;
+  /* position: absolute; */
   bottom: 30px;
   right: -50px;
 }
@@ -166,7 +166,7 @@ button.tertiary {
 }
 
 .tag-type-3.top-right {
-  position: absolute;
+  /* position: absolute; */
   top: 43px;
   right: -43px;
 }
