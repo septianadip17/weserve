@@ -185,6 +185,11 @@ section:not(.bg-main) h2.title {
   color: var(--color-2);
 }
 
+.cta {
+  display: flex;
+  column-gap: 20px;
+}
+
 /* HEADER */
 header.main-header .wrapper {
   display: flex;
@@ -308,11 +313,6 @@ section.hero .content-left h2 {
   line-height: 2rem;
   color: var(--color-4);
   max-width: 75%;
-}
-
-section.hero .content-left .cta {
-  display: flex;
-  column-gap: 20px;
 }
 
 section.hero .content-right figure {
@@ -454,19 +454,19 @@ section.statistics .content-left figure img {
 
 section.statistics .content-right {
   display: flex;
-  row-gap: 40px;
   flex-direction: column;
+  row-gap: 40px;
 }
 
-section.statistics .content-right span {
+section.statistics .content-right div  {
   display: flex;
   flex-direction: column;
   max-width: 95%;
 }
 
-/* section.statistics .content-right span h2.title {} */
+/* section.statistics .content-right div  h2.title {} */
 
-section.statistics .content-right span .subtitle {
+section.statistics .content-right div  .subtitle {
   color: var(--color-4);
   line-height: 2rem;
 }
