@@ -314,7 +314,7 @@ section.hero .content-left .cta {
   display: flex;
   column-gap: 20px;
 }
- 
+
 section.hero .content-right figure {
   position: relative;
 }
@@ -438,6 +438,7 @@ ul.clients li:hover {
 section.statistics {
   display: flex;
   column-gap: 70px;
+  align-items: center;
 }
 
 section.statistics .content-left figure {
@@ -449,6 +450,62 @@ section.statistics .content-left figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+section.statistics .content-right {
+  display: flex;
+  row-gap: 40px;
+  flex-direction: column;
+}
+
+section.statistics .content-right span {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+}
+
+/* section.statistics .content-right span h2.title {} */
+
+section.statistics .content-right span .subtitle {
+  color: var(--color-4);
+  line-height: 2rem;
+}
+
+section.statistics .content-right ul.pills {
+  list-style: none;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+}
+
+section.statistics .content-right ul.pills li {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 1rem;
+  align-items: center;
+  padding: 20px;
+  column-gap: 16px;
+}
+
+section.statistics .content-right ul.pills li svg {
+  color: var(--main-color);
+}
+
+section.statistics .content-right ul.pills li>span {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2 px;
+  flex: 1;
+}
+
+section.statistics .content-right ul.pills li>span h3 {
+  color: var(--color-2);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+section.statistics .content-right ul.pills li>span span {
+  color: var(--color-4);
 }
 
 /* end STATISTICS */
