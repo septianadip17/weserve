@@ -7,6 +7,7 @@
   --color-4: #5d5d7c;
   --color-5: #8d90a8;
   --color-6: #424560;
+  --color-7: #FF961A;
 }
 
 *,
@@ -188,6 +189,15 @@ section:not(.bg-main) h2.title {
 .cta {
   display: flex;
   column-gap: 20px;
+}
+
+.stars{
+  display: flex;
+  column-gap: 2px;
+}
+
+.stars svg{
+  color: var(--color-7 );
 }
 
 /* HEADER */
@@ -439,6 +449,7 @@ section.statistics {
   display: flex;
   column-gap: 70px;
   align-items: center;
+  justify-content: center;
 }
 
 section.statistics .content-left figure {
