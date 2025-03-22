@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/clash-display.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -695,32 +696,41 @@
     <section class="container showcase">
       <h2 class="title text-center" style="margin-bottom: 10px;">Our Showcase</h2>
       <h3 class="subtitle text-center" style="margin-bottom: 30px;">
-        They built amazing website to help more people around the world  by using our recommendation services and products
+        They built amazing website to help more people around the world by using our recommendation services and
+        products
       </h3>
 
       <div class="swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
+          <div class="swiper-slide">
+            <div class="card-slide">
+              <figure><img src="images/" alt=""></figure>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-slide">
+              <figure><img src="images/" alt=""></figure>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-slide">
+              <figure><img src="images/" alt=""></figure>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-slide">
+              <figure><img src="images/" alt=""></figure>
+            </div>
+          </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </section>
 
     <section class="container"></section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
