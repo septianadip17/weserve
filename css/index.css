@@ -653,4 +653,9 @@ section.statistics .content-right ul.pills li>span span {
   color: var(--main-color);
 }
 
+.cards-faq .column.cta .wrapper{
+  background-color: var(--color-2);
+  color: var(--white);
+}
+
 /* end FAQ */
