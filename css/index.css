@@ -624,9 +624,34 @@ section.statistics .content-right ul.pills li>span span {
 }
 
 .cards-faq .column .wrapper label {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   color: var(--color-2);
+  cursor: pointer;
+}
+
+.cards-faq .column .wrapper input[type="radio"]:checked~label::after {
+  color: var(--white);
+  background-color: var(--color-2);
+  transform: rotate(-90deg);
+}
+
+.cards-faq .column .wrapper label::after {
+  content: "\276F";
+  margin-left: auto;
+  position: relative;
+  transform: rotate(90deg);
+  width: 30px;
+  aspect-ratio: 1/1;
+  font-size: 12px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-2);
+  background-color: var(--white);
+  transition: all 0.15s ease-in-out;
 }
 
 .cards-faq .column .wrapper input[type="radio"]~.content {
@@ -650,12 +675,29 @@ section.statistics .content-right ul.pills li>span span {
 }
 
 .cards-faq .column .wrapper .content a {
+  text-decoration: none;
   color: var(--main-color);
 }
 
-.cards-faq .column.cta .wrapper{
+.cards-faq .column.faq-cta .wrapper {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
   background-color: var(--color-2);
-  color: var(--white);
+  color: var(--white); 
+}
+
+.cards-faq .column.faq-cta .wrapper a.arrow {
+  margin-left: auto;
+  text-decoration: none;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--white);
+  color: var(--color-2);
 }
 
 /* end FAQ */
