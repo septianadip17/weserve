@@ -600,4 +600,57 @@ section.statistics .content-right ul.pills li>span span {
 .card-slide:hover figure span a {
   opacity: 1;
 }
+
 /* end SHOWCASE */
+
+/* FAQ */
+.cards-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+
+.cards-faq .column .wrapper {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.cards-faq .column .wrapper input[type="radio"] {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.cards-faq .column .wrapper label {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-2);
+}
+
+.cards-faq .column .wrapper input[type="radio"]~.content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.cards-faq .column .wrapper input[type="radio"]:checked~.content {
+  max-height: 10rem;
+}
+
+.cards-faq .column .wrapper .content {
+  color: var(--color-4);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.cards-faq .column .wrapper .content>*:first-child {
+  margin-top: 20px;
+}
+
+.cards-faq .column .wrapper .content a {
+  color: var(--main-color);
+}
+
+/* end FAQ */
