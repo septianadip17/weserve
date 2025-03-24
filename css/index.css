@@ -8,6 +8,8 @@
   --color-5: #8d90a8;
   --color-6: #424560;
   --color-7: #FF961A;
+  --color-8: #070c29;
+  --color-9: #ffd15a;
 }
 
 *,
@@ -684,7 +686,7 @@ section.statistics .content-right ul.pills li>span span {
   column-gap: 6px;
   align-items: center;
   background-color: var(--color-2);
-  color: var(--white); 
+  color: var(--white);
 }
 
 .cards-faq .column.faq-cta .wrapper a.arrow {
@@ -701,3 +703,67 @@ section.statistics .content-right ul.pills li>span span {
 }
 
 /* end FAQ */
+
+/* FOOTER */
+footer.main-footer {
+  background-color: var(--color-8);
+  color: var(--color-5);
+  margin-top: 50px;
+}
+
+footer.main-footer .bottom-cta {
+  display: flex;
+  column-gap: 60px;
+  background-color: var(--main-color);
+  padding: 50px;
+  border-radius: 40px;
+}
+
+footer.main-footer .bottom-cta>div {
+  flex: 1;
+}
+
+
+footer.main-footer .content-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  color: var(--white);
+}
+
+footer.main-footer .content-left .pill {
+  padding: 8px 16px;
+  display: inline-flex;
+  column-gap: 6px;
+  color: var(--color-2);
+  border-radius: 9999px;
+  background-color: var(--white);
+}
+
+footer.main-footer .content-left .pill .text {
+  font-weight: 600;
+}
+
+footer.main-footer .content-left h1 {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+
+footer.main-footer .content-left h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2rem;
+  max-width: 90%;
+}
+
+footer.main-footer .bottom-cta span.cta a.primary {
+  color: var(--color-2);
+  background-color: var(--color-9);
+}
+
+footer.main-footer .bottom-cta span.cta a.tertiary {
+  color: var(--white)
+}
+/* end FOOTER */
