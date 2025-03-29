@@ -705,13 +705,6 @@ section.statistics .content-right ul.pills li>span span {
 /* end FAQ */
 
 /* FOOTER */
-footer.main-footer {
-  background-color: var(--color-8);
-  color: var(--color-5);
-  margin-top: -100px;
-  padding-top: 68px;
-}
-
 section.bottom-cta {
   position: relative;
 }
@@ -865,6 +858,47 @@ section.bottom-cta .content-right > div a::after{
   content: "";
   inset: 0;
   z-index: 2;
+}
+
+footer.main-footer {
+  background-color: var(--color-8);
+  color: var(--color-5);
+  margin-top: -100px;
+  padding-top: 68px;
+}
+
+footer.main-footer .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+footer.main-footer .logo span {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+footer.main-footer .logo svg path.leaf {
+  fill: var(--main-color);
+}
+
+footer.main-footer .about ul.socials{
+  display: flex;
+  column-gap: 14px;
+  list-style: none;
+}
+
+footer.main-footer .about ul.socials li a{
+  background-color: var(--white);
+  width: 44px;
+  aspect-ratio: 1/1;
+  border-radius: 9999px;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
 }
 
 /* end FOOTER */
